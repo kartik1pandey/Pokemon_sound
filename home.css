@@ -1,0 +1,200 @@
+body {
+    background-image: url('images//Designer (11).png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: 'Arial Narrow Bold', sans-serif;
+}
+
+.dark {
+    background-color: #0000002c;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.allcards {
+    background: #0000009e;
+    width: 1200px;
+    height: 600px;
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.526);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    overflow: auto;
+}
+
+.allcards::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    width: 250px;
+    height: 250px;
+    background-color: #039fd83f;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    margin-bottom: 0;
+}
+
+h4 {
+    width: auto;
+    top: 30px;
+    position: relative;
+    font-size: 20px;
+}
+
+.img {
+    position: relative;       
+    height: 200px; 
+    width: 250px;  
+    top: 20px;
+    padding: 0;  
+    margin: 0;
+    overflow: hidden; 
+}
+
+.img img {
+    position: relative; 
+    width: 100%; 
+    height: 100%; 
+    max-height: 120%; 
+    object-fit: contain; 
+}
+
+
+.audiobox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+
+}
+
+.q {
+    display: none;
+}
+
+button {
+    margin-top: 0px;
+    padding: 7px 30px;
+    background-color: #ffffff;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    top: -20px;
+}
+
+button:hover {
+    background-color: #e1dddd;
+    color: black;
+}
+
+#audio {
+    display: none;
+}
+
+#playbutton {
+    position: relative;
+    top: 0px;
+}
+
+
+@media (max-width: 768px) {
+    .allcards {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        margin: 10px 0;
+
+        h4 {
+            font-size: 18px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        button {
+            padding: 5px 20px;
+        }
+
+        h4 {
+            font-size: 16px;
+        }
+    }
+}
+.card:hover{
+    border: 2px solid white;
+    box-shadow: 0px 0px 20px -5px white;
+}
+
+.details{
+    width: 100%;
+    height: 100vh;
+    background-color: #000000b6;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    /* border: 2px solid white; */
+
+}
+.black{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid white;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+}
+.i1{
+    width: 200px;
+    height: 200px;
+    padding: 0;
+    margin-right: 40px;
+}
+.d{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+    height: 200px;
+}
+.d1{
+    width: 50%;
+    height: 100%;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 200;
+}
+.pokemonDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
